@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>form</h2>
+    <form action="get">
+      <div>
+        <label for="fname">enter your full name</label>
+        <input
+          type="text"
+          name="Fname"
+          id="fname"
+          placeholder="enter your fname"
+          required
+          pattern="^[a-zA-z ]{}3,20&"
+        />
+      </div>
+      <br />
+      <div>
+        <form method="get">
+        <label for="pass">enter your password</label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="enter your password"
+        />
+        </form>
+      </div>
+      <br />
+      <div>
+        <form method="get">
+        <label for="uemail">enter your email</label>
+        <input
+          type="email"
+          name="uemil"
+          id="uemail"
+          placeholder="abc123@gmail.com"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="contact">enter your contact</label>
+        <input
+          type="tel"
+          name="contact"
+          id="contact"
+          placeholder="enter your phno"
+          required
+          pattern="^[0-9]{9,11}&"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="Dob">enter your DOB</label>
+        <input type="date" name="Dob" id="Dob"  />
+      </div>
+      <br />
+      <div>
+        <label for="age">enter your age</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="abc123@gmail.com"
+          required
+          min="18"
+          max="60"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="">select your gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="transgender">transgender
+      </div>
+      <br>
+      <div>
+        <form method="get">
+        <label for="">select your education </label>
+        <input type="checkbox" name="edu" value="SSC">SSC
+        <input type="checkbox" name="edu" value="hsc">HSC
+        <input type="checkbox" name="edu" value="UG">UG
+        <input type="checkbox" name="edu" value="PG">PG
+        </form>
+      </div>
+      <br>
+      <div>
+        <form method="get">
+            <label for="course">select your courses</label>
+            <select name="course" id="course" required>
+                <option value="HTML">HTML</option>
+                <option value="css">Css</option>
+                <option value="js">js</option>
+                <option value="react">react</option>
+                <option value="typescript">typescript</option>
+                <option value="angular js">angular js</option>
+            </select>
+        </form>
+      </div>
+      <br>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>

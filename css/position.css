@@ -1,0 +1,44 @@
+header{
+    background-color: aquamarine;
+    border-bottom: 3px solid darkolivegreen;
+    padding: 5px;
+}
+.logo{
+    border: 5px solid green;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 8px;
+}
+.title{
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-shadow: 6px 2px 2px black;
+}
+.pos-relative{
+    border: 3px solid cadetblue;
+    width: 200px;
+    left: 50px;
+    position: relative;
+}
+.parent{
+    border: 3px solid green;
+    width: 673px;
+    position: relative;
+    left: 8px;
+}
+.child{
+    border: 3px solid blue;
+    width: 500px;
+    position: absolute;
+    left: 10px;
+}
+.pos-fix{
+    width: 50px;
+    position: fixed;
+    right: 0px;
+    top: 200px;
+}

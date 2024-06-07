@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grandfather >p{
+            background-color: aqua;
+            color: blueviolet;
+            text-align: center;
+        }
+        /* adjacent sibilings selectors */
+        .grandfather+p{
+            color: blue;
+            border: 2px solid black;
+            background-color: beige;
+        }
+        /* general sibilings selectors */
+        .grandfather~p{
+            font-size: 50px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="grandfather" >
+        <p>child-1</p>
+        <p >child-2</p>
+        <p >child-3</p>
+        <div><p > Grand son</p></div>
+        <p >child-4</p>
+    </div>
+    <p >nearest friend</p>
+    <p>outside friend</p>
+    <p >outside friend</p>
+    
+    
+</body>
+</html>

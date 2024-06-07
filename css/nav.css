@@ -1,0 +1,25 @@
+.navcontainer{
+    list-style-type: none;
+    margin: 0px;    
+    padding: 0px;
+    background-color: rgb(151, 144, 144);
+    /* opacity: 0; */
+    /* width: 200px; */
+    overflow: auto;
+}
+.navcontainer a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+}
+.navcontainer a:hover{
+    background-color: rgb(99, 155, 99);
+    font-weight: 700;
+    color: rgb(80, 80, 236);
+}
+li{
+    float: left;
+}

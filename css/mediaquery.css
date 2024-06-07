@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+.block{
+    border: 2px solid black;
+    float: left;
+    width:20%;
+}
+header{
+    background-color: aquamarine;
+    border-bottom: 3px solid darkolivegreen;
+    padding: 5px;
+}
+.logo{
+    border: 5px solid green;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 8px;
+}
+.title{
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-shadow: 6px 2px 2px black;
+}
+
+@media  screen and (max-width:1200) {
+    .block{
+        width: 25%;
+        background-color: aqua;
+    }
+}
+
+@media  screen and (max-width:992) {
+    .block{
+        width: 33.33%;
+        background-color: rgb(177, 41, 98);
+    }
+}
+@media  screen and (max-width:768) {
+    .block{
+        width: 50%;
+        background-color: rgb(84, 214, 32);
+    }
+}
+@media  screen and (max-width:576) {
+    .block{
+        width: 100%;
+        background-color: aqua;
+    }
+}
