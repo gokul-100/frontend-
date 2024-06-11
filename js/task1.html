@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="text1" >
+        <button type="button" onclick="copyPage()">same as page</button>
+        <input type="text" id="text2" >
+    </form>
+    <script>
+        function copyPage(){
+           
+            document.getElementById("text2").innerHTML= document.getElementById("text1").value;;
+        }
+        let emp=[
+            {id:1,name:"gokul",salary:95000,gender:"male",address:"chennai"},
+            {id:2,name:"suresh",salary:95000,gender:"male",address:"mumbai"},
+            {id:3,name:"rahul",salary:95000,gender:"male",address:"nagpur"},
+            {id:4,name:"madhav",salary:95000,gender:"male",address:"Delhi"},
+            {id:5,name:"ratan",salary:95000,gender:"male",address:"bangalure"},
+            {id:6,name:"raja",salary:95000,gender:"male",address:"hyderabad"},
+        ]
+        for(let i=0;i<emp.length;i++){
+            document.write(`id:${emp[i].id} name:${emp[i].name} salary:${emp[i].salary} gender:${emp[i].gender} address:${emp[i].address}`,"<br>");
+        }
+    </script>
+</body>
+</html>

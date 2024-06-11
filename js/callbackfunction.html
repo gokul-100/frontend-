@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greetin(){
+            document.write("good afternoon all <br>")
+        }
+        function welcome(company, greeting){
+            return `welcome you all in ${company} <br>`;
+           
+        }
+        document.write(welcome("changepond"));
+
+        // use of settimeout
+        setTimeout(()=>{
+            window.alert("danger....");
+        },2000)
+        // set interval function
+        count=0;
+        setInterval(()=>{
+            // console.log(count=count+1);
+        },1000)
+        
+    </script>
+</body>
+</html>

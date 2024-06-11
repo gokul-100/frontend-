@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let msg="    hello      "
+        document.write(msg);
+        console.log(msg);
+        document.write("<br>");
+        let courses=["react", "angular","java","python","node js"];
+        courses.forEach((val,index)=>{
+            document.write(` val:${val}-index:${index}`);
+        })
+        let num=[1,2,3,4,5,6];
+        document.write(num,"<br>");
+        let mapout =num.map((val,index)=>{
+            return val*2;
+        })
+        document.write(mapout,"<br>");
+
+        let filterout=num.filter((val,index)=>{
+            return val%2===0;
+        })
+        document.write(filterout,"<br>");
+        let eveout=num.every((val,index)=>{
+            return val>0;
+        })
+        document.write(eveout,"<br>");
+        let someout=num.some((val,index)=>{
+            return val>3;
+        })
+        document.write(someout,"<br>");
+        let re=num.reduce((prev,next)=>{
+            return prev*next;
+        });
+        document.write(re,"<br>");
+    </script>
+</body>
+</html>

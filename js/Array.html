@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let courses = ["react",45,"java","python"];
+        console.log(courses);
+        console.log(`array length :${courses.length}` );
+        console.log(courses.length-1);
+        console.log(courses[1]);
+        courses[2]="javascript";
+        console.log(courses[2]);
+
+        for(let i=0;i<courses.length;i++){
+            document.write(courses[i]," ,");
+        }
+
+        // for of : it will return array values
+        for(let c of courses ){
+            document.write(c);
+        }
+        // for in :it will return array index
+        for(let i in courses){
+            document.write(i);
+        }
+        document.write("<br>");
+        // push it allows insert the value into the last ndex of array
+        courses.push("node js");
+        document.write(courses, "<br>");
+        courses.unshift("html","css","typescript");
+        document.write(courses, "<br>");
+
+        // shit
+        courses.shift();
+        document.write(courses, "<br>");
+
+        // it will remove one value from 2nd index and add two bvaluews
+        courses.splice(2,1,"Mysql","mongodb");
+        document.write(courses, "<br>");
+
+        document.write(courses.toString());
+        connsole.log(courses.join(" "));
+    </script>
+</body>
+</html>

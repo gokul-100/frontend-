@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+    <div class="d4"></div>
+    <div class="d5"></div>
+    <div class="d6"></div>
+    <div class="d7"></div>
+    <div class="d8"></div>
+    <div class="d9"></div>
+    <div class="d10"></div>
+    <div class="d11"></div>
+    <div class="d12"></div>
+    <div class="d13"></div>
+    <div class="d14"></div>
+    <div class="d15"></div>
+    <div class="d16"></div>
+    <div class="d17"></div>
+    <div class="d18"></div>
+    <div class="d19"></div>
+    <div class="d20"></div>
+    <img src="../assets/images/image1.webp" id="img" alt="">
+    <script>
+
+        // string and it's method
+        let msg="welcome you all in changepond you all are now changepond developer";
+        document.querySelector(".d1").innerHTML=msg;
+        document.querySelector(".d2").innerHTML=msg.toUpperCase();
+        document.querySelector(".d3").innerHTML=msg.toLowerCase();
+        document.querySelector(".d4").innerHTML=msg.length;
+        document.querySelector(".d5").innerHTML=msg.indexOf("changepond");
+        document.querySelector(".d6").innerHTML=msg.indexOf("changepond",25);
+        document.querySelector(".d7").innerHTML=msg.indexOf("Changepond",25);
+        // use of lastindexof
+        document.querySelector(".d8").innerHTML=msg.lastIndexOf("all",25);
+        document.querySelector(".d9").innerHTML=msg.lastIndexOf("all");
+        document.querySelector(".d10").innerHTML=msg.search("all");
+        // USE OF SLICE METHOD
+        document.querySelector(".d11").innerHTML=msg.slice("10");
+        document.querySelector(".d12").innerHTML=msg.slice("10","25");
+        document.querySelector(".d13").innerHTML=msg.slice("- 10","-25");
+        document.getElementById('img').src="../assets/images/facebook.png";
+        document.querySelector(".d14").innerHTML=msg.substring("20","25");
+        document.querySelector(".d14").innerHTML=msg.substring("20","25");
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../assets/images/image1.webp" id="img1" alt=""> <br>`
+    <strong id="imageName"> tech</strong>
+    <button type="button" onclick="changeImage()">change</button>
+    <script>
+        let sr1="../assets/images/image1.webp";
+        let sr2="../assets/images/image2.webp";
+        let current=sr1;
+        function changeImage(){
+            if(current===sr1){
+                document.getElementById("img1").src=sr2;
+                document.getElementById("imageName").innerHTML="work";
+                current=sr2;
+                
+            }
+            else{
+                document.getElementById("img1").src=sr1;
+                document.getElementById("imageName").innerHTML="tech";
+                current=sr1;
+            }
+        }
+    </script>
+</body>
+</html>

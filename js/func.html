@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // simple function
+        function greeting(){
+            return "good morning friends";
+        }
+        // parameterized funcrtion
+        function welcome(std1){
+            return `welcome you all ${std1}`;
+        }
+        document.write(welcome("Gokul"),"<br>");   
+            //anonymus function
+        let add= function (num1 , num2){
+            return num1 + num2;
+        } 
+        document.write(add(200,500),"<br>")
+
+        // arrow fnction
+        let sub1 = ()=>{
+            return 100 +200;
+        }
+        let sub2= (num1 , num2)=> num1 -num2;
+
+          document.write(sub1,"<br>");
+          document.write(sub2(200,500),"<br>");
+
+        
+        let fullname =(fname, lname,mname=" ")=>{
+            return `${fname},${lname} ,${mname} `;
+        }
+        document.write(fullname("gokul","kannan"),"<br>");
+
+        // rest parametarize function
+
+        let emp = (...std)=>{
+            return std;
+        }
+
+        document.write(emp("Rahul","Gokul","kannan","arun","raja"),"<br>");
+
+       console.log( greeting());
+       document.write( greeting());
+       let greet=greeting();
+       document.write(greet)
+    </script>
+</body>
+</html>

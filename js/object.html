@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person={
+            id:101,
+            name:"gokul",
+            Contact:72457257,
+            address:{
+                city:"chennai",
+                pin:1234,
+                state:"tamilnadu"
+            },
+            details:function (){
+                return `Id:${this.id} name:${this.name} contact;${this.Contact},address:${this.address.city}`
+            }
+        }
+        document.write(`ID:${person.id} name:${person.name} contact:${person.Contact} ` ,"<br>");
+
+        document.write(person.details(),"<br>");
+        document.write(person.address.city);
+
+        person.
+    </script>
+</body>
+</html>
