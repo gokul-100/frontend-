@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Change</title>
+    <style>
+        h1{
+            margin-top: 7%;
+            margin-left: 40%;
+        }
+        h1 img {
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        span{
+            display: block;
+        }
+        button {
+            height: 50px;
+            width: 130px;
+            border-radius: 10px;
+            border: none;
+            background: rgb(136, 143, 202);
+            font-size: 14px;
+            transform: translateX(300px);
+            font-weight: 600;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        button:focus{
+            background: rgb(69, 219, 69);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="img">
+        <img src="https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg" alt="Default Image">
+        <span>Mahendra Singh Dhoni</span>
+    </h1>
+    
+    <button onclick="update(event)" data-src="https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg" data-name="Mahendra Singh Dhoni">
+        M S Dhoni
+    </button>
+    <button onclick="update(event)" data-src="https://static.tnn.in/thumb/msid-110161438,thumbsize-54810,width-1280,height-720,resizemode-75/110161438.jpg" data-name="virat Kholi">
+        Virat Kholi
+    </button>
+    <button onclick="update(event)" data-src="https://imgeng.jagran.com/images/2023/nov/Rohit-Sharma-profile1700142481090.jpg" data-name="Rohit Sharma">
+        Rohit Sharma
+    </button>
+    <button onclick="update(event)" data-src="https://img.jagranjosh.com/imported/images/E/GK/sachin-records.png" data-name="Sachin Tendulkar">
+        Sachin Tendulkar
+    </button>
+
+    <button onclick="update(event)" data-src="https://assets.telegraphindia.com/telegraph/2023/Jul/1690501418_jadeja.jpg" data-name="Jadeja">
+     Jadeja
+    </button>
+    <button onclick="update(event)" data-src="https://imgk.timesnownews.com/story/Suresh_Raina_IANS_1_1.png" data-name="Raina">
+        Raina
+    </button>
+     <script>
+        var h1 = document.getElementById("img");
+        var imgElement = h1.querySelector("img");
+        var nameElement = h1.querySelector("span");
+
+        function update(event) {
+            var button = event.currentTarget;
+            imgElement.src = button.getAttribute("data-src");
+            imgElement.alt = button.getAttribute("data-name");
+            nameElement.textContent = button.getAttribute("data-name");
+        }
+    </script>
+</body>
+</html>

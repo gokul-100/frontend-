@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .myform {
+        border: 2px solid black;
+        width: 500px;
+        margin: auto;
+        padding: 7px;
+        border-radius: 6px;
+        box-shadow: 10px 7px 6px black;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="myform">
+      <label for="">Enter First Number:</label>
+      <input type="text" name="num1" id="num1" /> <br />
+      <br />
+      <label for="">Enter Second Number:</label>
+      <input type="text" name="num2" id="num2" /> <br />
+      <br />
+
+      <button type="button" onclick="addition()">Add</button>
+      <button type="button" onclick="Subtraction()" >Sub</button>
+      <button type="button" onclick="Multiplication()">Mul</button>
+      <button type="button" onclick="Division()">Div</button><br />
+      <br />
+      <strong id="res">Result: </strong>
+    </form>
+    <script>
+        function addition(){
+            // window.alert("hi");
+         let no1 =document.getElementById("num1").value;
+         let no2 =document.getElementById("num2").value;
+         
+         document.getElementById("res").innerHTML="Result "+(parseInt(no1)+parseInt(no2));
+        }
+        function Subtraction(){
+            // window.alert("hi");
+         let no1 =document.getElementById("num1").value;
+         let no2 =document.getElementById("num2").value;
+         
+         document.getElementById("res").innerHTML="Result "+(no1-no2);
+        }function Multiplication(){
+            // window.alert("hi");
+         let no1 =document.getElementById("num1").value;
+         let no2 =document.getElementById("num2").value;
+         
+         document.getElementById("res").innerHTML="Result "+(no1*no2);
+        }function Division(){
+            // window.alert("hi");
+         let no1 =document.getElementById("num1").value;
+         let no2 =document.getElementById("num2").value;
+         
+         document.getElementById("res").innerHTML="Result "+(no1/no2);
+        }
+    </script>
+  </body>
+</html>
