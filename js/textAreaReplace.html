@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid darkorchid;
+            border-radius: 7px;
+            width: 300px;
+            height: 400px;
+            box-sizing: border-box;
+            padding: 5px;
+            margin: 3px;
+            display: flex;
+            
+            
+        }
+        #text{
+            height: 300px;
+            width: 150px;
+            background-color: beige;
+
+        }
+        .container input {
+            width: 100%; 
+            padding: 7px;
+            box-sizing: border-box;
+            
+        }
+        @media (min-width: 768px) {
+    textarea {
+      height: 150px; 
+    }
+
+    input[type="text"] {
+      padding: 10px; 
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1000px; 
+      margin-left: 30%;
+    }
+
+    textarea {
+      height: 500px; 
+    }
+
+    input[type="text"] {
+      padding: 15px; 
+    }
+  }
+    </style>
+    <script>
+        
+        
+        function changereplace(){
+            var textarea = document.getElementById('text');
+            var textToReplace = document.getElementById('text1').value;
+            var newText = document.getElementById('text2').value;
+            
+            var content = textarea.value;
+            var updatedContent = content.replace(new RegExp(textToReplace, 'g'), newText);
+            
+            textarea.value = updatedContent;
+        }
+        function changereplaceAll(){
+            var textarea = document.getElementById('text');
+            var textToReplace = document.getElementById('text1').value;
+            var newText = document.getElementById('text2').value;
+            var content = textarea.value;
+            var updatedContent = content.replaceAll(textToReplace, newText);
+            textarea.value = updatedContent;
+        }
+    </script>
+</head>
+<body style="background-color: aliceblue;">
+    
+    <div class="container" >
+       <div class="TextArea"> <textarea name="" id="text">Hi this is gokul from changepond technology and I am the software developer</textarea> <br>
+        <span>Text Area</span></div>
+        <div>
+            <form action="" style="padding: 3px;">
+                <label for="text1">replace text</label><br>
+                <input type="text" name="text" id="text1"  placeholder="enter replacing text"><br>
+                <label for="text2">new text</label><br>
+                <input type="text" name="text" id="text2"  placeholder="enter new text"><br><br>
+                <button type="button" id="replace" onclick="changereplace()">replace</button><br><br>
+                <button type="button" id="replace" onclick="changereplaceAll()">replace All</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
